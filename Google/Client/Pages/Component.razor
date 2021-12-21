@@ -1,0 +1,170 @@
+﻿<h3>Component</h3>
+<EditForm Model="ObjStudent" OnValidSubmit="HandleValidSubmit" OnInvalidSubmit="HandleInvalidSubmit">
+
+
+    <div class="form-group row">
+        <label for="name" class="col-sm-3">Name : </label>
+        <InputText id="name" class="form-control col-sm-8" @bind-Value="@ObjStudent.Name" placeholder="Enter name"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.Name)" />
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="form-group row">
+        <label for="dateofbirth" class="col-sm-3">D.O.B. : </label>
+        <InputDate id="dateofbirth" class="form-control col-sm-8" @bind-Value="@ObjStudent.DOB" placeholder="Enter Date of Birth"></InputDate>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.DOB)" />
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="form-group row">
+        <label for="address" class="col-sm-3">Address : </label>
+        <InputText id="address" class="form-control col-sm-8" @bind-Value="@ObjStudent.Address" placeholder="Enter Address"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.Address)" />
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="form-group row">
+        <label for="email" class="col-sm-3">Email : </label>
+        <InputText id="email" class="form-control col-sm-8" @bind-Value="@ObjStudent.Email" placeholder="Enter Email"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.Email)" />
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="form-group row">
+        <label for="phoneNumber" class="col-sm-3">Phone Number : </label>
+        <InputText id="phoneNumber" class="form-control col-sm-8" @bind-Value="@ObjStudent.PhoneNumber" placeholder="Enter Phone Number"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.PhoneNumber)" />
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="form-group row">
+        <label for="EmployeeTypeId" class="col-sm-3"> Residence Type :</label>
+        <CustomInputSelect id="ResidenceTypeId" @bind-Value="@ObjStudent.EducationID" class="form-control col-sm-8">
+
+            @foreach (var res in _residenceTypes)
+            {
+                <option value="@res.EducationID">
+                    @res.EducationID
+                </option>
+            }
+            /**/
+
+        </CustomInputSelect>
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.EducationID)" />
+        </div>
+    </div>
+
+
+    
+
+
+
+
+
+    <div class="form-group row">
+        <label for="studentName" class="col-sm-3">Name : </label>
+        <InputText id="studentName" class="form-control col-sm-8" @bind-Value="@ObjStudent.Name" placeholder="Enter name"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.Name)" />
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="form-group row">
+        <label for="studentName" class="col-sm-3">Name : </label>
+        <InputText id="studentName" class="form-control col-sm-8" @bind-Value="@ObjStudent.Name" placeholder="Enter name"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.Name)" />
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="form-group row">
+        <label for="studentName" class="col-sm-3">Name : </label>
+        <InputText id="studentName" class="form-control col-sm-8" @bind-Value="@ObjStudent.Name" placeholder="Enter name"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.Name)" />
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="form-group row">
+        <label for="studentName" class="col-sm-3">Name : </label>
+        <InputText id="studentName" class="form-control col-sm-8" @bind-Value="@ObjStudent.Name" placeholder="Enter name"></InputText>
+
+        <div class="col-sm-3">&nbsp;</div>
+        <div class="col-sm-8">
+            <ValidationMessage class="offset-sm-3 col-sm-8" For="@(() => ObjStudent.Name)" />
+
+        </div>
+
+    </div>
+
+</EditForm>
